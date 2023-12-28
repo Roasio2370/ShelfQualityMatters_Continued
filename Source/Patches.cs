@@ -4,17 +4,20 @@ using Verse;
 
 namespace ShelfQualityMatters
 {
-    [HarmonyPatch(typeof(Building_Storage), nameof(Building_Storage.SpawnSetup))]
+    [HarmonyPatch(typeof(Building), "get_MaxItemsInCell")]
     public class Patches
     {
-        public static void Prefix(Building_Storage __instance) {
-            Log.Message("Gonna try get quality");
+        public static bool Prefix(Building __instance, ref int __result)
+        {
+            if (!(__instance is Building_Storage)) {
+                return true;
+            }
             if (!__instance.TryGetQuality(out var qc))
             {
-                return;
+                return true;
             }
-            Log.Message($"The quality I found is {qc}");
-            __instance.def.building.maxItemsInCell = QualityToStorage(qc);
+            __result = QualityToStorage(qc);
+            return false;
         }
         private static int QualityToStorage(QualityCategory quality)
         {
