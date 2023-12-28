@@ -21,3 +21,7 @@ This small mod makes it so shelves' quality informs the number of items that can
 ## Credits
 
 - Crimson Shadow (crimsonshadow1232) from the RimWorld Discord server, for the idea
+
+## Links
+
+- Steam Workshop: https://steamcommunity.com/sharedfiles/filedetails/?id=3125228510
