@@ -1,4 +1,4 @@
 <?xml version="1.0" encoding="utf-8"?>
 <LanguageData>
-    <SQM_Settings_Description>Vanilla value is "3" for all quality levels</SQM_Settings_Description>
+    <SQM_Settings_Description>Configure how many items-per-cell each quality level has. Vanilla value is "3" for all quality levels</SQM_Settings_Description>
 </LanguageData>
