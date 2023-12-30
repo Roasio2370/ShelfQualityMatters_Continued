@@ -37,12 +37,9 @@ namespace ShelfQualityMatters
         }
         private static int QualityToStorage(QualityCategory quality)
         {
-            if (quality == QualityCategory.Legendary)
-            {
-                return 10;
-            }
+            var settings = LoadedModManager.GetMod<Main>().settings;
 
-            return (int)quality + 1;
+            return settings.qualityToItemsPerCell[quality];
         }
     }
 }
