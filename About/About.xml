@@ -1,9 +1,10 @@
 <?xml version="1.0" encoding="utf-8"?>
 <ModMetaData>
-    <name>Shelf Quality Matters</name>
+    <name>Shelf Quality Matters(Continued)</name>
     <author>Madara Uchiha</author>
     <supportedVersions>
         <li>1.4</li>
+        <li>1.5</li>
     </supportedVersions>
     <packageId>madarauchiha.shelfqualitymatters</packageId>
     <description>
